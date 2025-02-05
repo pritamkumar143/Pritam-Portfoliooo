@@ -39,7 +39,7 @@ const Navbar = () => {
                   href={link.link} // Resume link from constants.js
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+                  className="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300"
                 >
                   {link.title}
                 </a>

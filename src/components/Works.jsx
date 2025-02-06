@@ -36,28 +36,42 @@ const ProjectCard = ({
           {/* Icons Container */}
           <div className="absolute inset-0 flex justify-end m-3 gap-2 card-img_hover">
             {/* GitHub Icon */}
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="GitHub"
-                className="w-1/2 h-1/2 object-contain"
-              />
+            <div className="relative group">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+
+              {/* Tooltip */}
+              <span className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                GitHub
+              </span>
             </div>
 
             {/* Live Demo Icon */}
             {live_demo_link && (
-              <div
-                onClick={() => window.open(live_demo_link, "_blank")}
-                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-              >
-                <img
-                  src={liveIcon} // Make sure this icon exists in assets
-                  alt="Live Demo"
-                  className="w-1/2 h-1/2 object-contain"
-                />
+              <div className="relative group">
+                <div
+                  onClick={() => window.open(live_demo_link, "_blank")}
+                  className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img
+                    src={liveIcon}
+                    alt="Live Demo"
+                    className="w-1/2 h-1/2 object-contain"
+                  />
+                </div>
+
+                {/* Tooltip */}
+                <span className="absolute top-[-30px] left-1/2 transform -translate-x-1/2 bg-white text-red-500 text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  Live!
+                </span>
               </div>
             )}
           </div>
@@ -106,4 +120,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

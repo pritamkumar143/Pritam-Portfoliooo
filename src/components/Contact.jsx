@@ -149,7 +149,7 @@ const Contact = () => {
         >
           <div className="bg-secondary p-6 rounded-lg shadow-lg w-[350px] text-center">
             <h2 className="text-xl font-bold text-primary">Message Sent!</h2>
-            <p className="text-primary mt-2">I'll get back to you soon.</p>
+            <p className="text- mt-2">I'll get back to you soon.</p>
             <button
               onClick={() => setShowPopup(false)}
               className="mt-4 bg-primary text-white py-2 px-6 rounded-md hover:bg-blue-900 transition"

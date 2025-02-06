@@ -39,7 +39,7 @@ const Navbar = () => {
                   href={link.link} // Resume link from constants.js
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-blue-900 text-white rounded-md hover:bg-blue-800 transition duration-300"
+                  className="px-4 font-poppins font-medium py-2 bg-primary text-white rounded-md hover:bg-secondary transition duration-300"
                 >
                   {link.title}
                 </a>
@@ -79,7 +79,7 @@ const Navbar = () => {
                       href={link.link} // Resume link from constants.js
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block text-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+                      className="block text-center px-4 py-2 bg-primary text-secondary rounded-md hover:bg-secondary transition duration-300"
                     >
                       {link.title}
                     </a>

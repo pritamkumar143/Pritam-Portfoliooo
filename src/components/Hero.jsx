@@ -29,10 +29,10 @@ const Hero = () => {
                 words={["Pritam", "a Developer", "a ML Enthusiast"]}
                 loop={true}
                 cursor
-                cursorStyle="-"
-                typeSpeed={80}
-                deleteSpeed={50}
-                delaySpeed={1500}
+                cursorStyle="."
+                typeSpeed={100}
+                deleteSpeed={90}
+                delaySpeed={2500}
               />
             </span>
           </motion.h1>
@@ -46,17 +46,6 @@ const Hero = () => {
             I develop 3D visuals, user <br className="sm:block hidden" />
             interfaces, and web applications.
           </motion.p>
-
-          {/* Hire Me Button */}
-          <motion.a
-            href="#contact"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 1 }}
-            className="mt-5 inline-block bg-[#915eff] text-white font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-[#7a3ee7] transition-all"
-          >
-            Hire Me
-          </motion.a>
         </div>
       </div>
 

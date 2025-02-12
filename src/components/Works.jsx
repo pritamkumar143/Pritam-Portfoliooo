@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github, liveIcon } from "../assets"; // Import live icon
+import { github, liveIcon } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -14,15 +14,20 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  live_demo_link, // Add live demo link
+  live_demo_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
-          scale: 1,
+          scale: 1.05,
           speed: 450,
+          glareEnable: true, // Enable glare effect
+          glareMaxOpacity: 0.45, // Adjust glare intensity
+          glareColor: "#ffffff", // White glare
+          glarePosition: "all", // Glare on all sides
+          glareBorderRadius: "12px", // Match card's border radius
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >

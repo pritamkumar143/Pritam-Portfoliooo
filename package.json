@@ -15,8 +15,10 @@
     "@emotion/styled": "^11.14.0",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "maath": "^0.10.7",
+    "motion": "^12.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
@@ -24,6 +26,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "tailwind-merge": "^3.0.1",
     "three": "^0.162.0"
   },
   "devDependencies": {
